@@ -1,0 +1,164 @@
+/* material icons */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 48px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }  
+/* estilos generales */
+html{
+	box-sizing: border-box;
+	font-size: 62.5%; /*1rem = 10px*/
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.6rem;
+}
+/* estilos notificacion */
+.notification{
+    width: 5rem;
+    margin: 20rem auto;
+    animation: ring 4s 0.7s ease infinite; 
+    transform-origin: 50% 4px;
+}
+.notification__count{
+    --size: 3rem;
+    width: var(--size);
+    height: var(--size);
+    max-width: var(--size);
+    max-height: var(--size);
+    display: inline-flex;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    border: 3px solid #fff;
+}
+@keyframes ring {
+    0%{
+        transform: rotate(0);
+    }
+    1%{
+        transform: rotate(30deg);
+    }
+    3%{
+        transform: rotate(-38deg);
+    }
+    5%{
+        transform: rotate(34deg);
+    }
+    7%{
+        transform: rotate(-36deg);
+    }
+    9%{
+        transform: rotate(30deg);
+    }
+    11%{
+        transform: rotate(-34deg);
+
+    }
+    13%{
+        transform: rotate(26deg);
+
+    }
+    15%{
+        transform: rotate(-32deg);
+    }
+    17%{
+        transform: rotate(22deg);
+    }
+    19%{
+        transform: rotate(-30deg);
+    }
+    21%{
+        transform: rotate(18deg);
+    }
+    23%{
+        transform: rotate(-28deg);
+    }
+    25%{
+        transform: rotate(14deg);
+    }
+    27%{
+        transform: rotate(-24deg);
+    }
+    29%{
+        transform: rotate(10deg);
+    }
+    31%{
+        transform: rotate(-20deg);
+    }
+    33%{
+        transform: rotate(8deg);
+    }
+    35%{
+        transform: rotate(-16deg);
+    }
+    37%{
+        transform: rotate(7deg);
+    }
+    39%{
+        transform: rotate(-12deg);
+    }
+    41%{
+        transform: rotate(6deg);
+    }
+    43%{
+        transform: rotate(-8deg);
+    }
+    45%{
+        transform: rotate(4deg);
+    }
+    47%{
+        transform: rotate(-6deg);
+    }
+    49%{
+        transform: rotate(3deg);
+    }
+    51%{
+        transform: rotate(-3deg);
+    }
+    53%{
+        transform: rotate(2deg);
+
+    }
+    55%{
+        transform: rotate(-1deg);
+    }
+    57%{
+        transform: rotate(1deg);
+    }
+    59%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
